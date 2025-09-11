@@ -80,7 +80,7 @@ version = "0.28.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fa721ef7c3d28dad0a82f12b58ed06f8d55ded9fff60cca2bdd26eea8ef0b23e"
 dependencies = [
- "facet-core",
+ "facet-core 0.28.3",
  "facet-macros",
  "static_assertions",
 ]
@@ -93,9 +93,9 @@ dependencies = [
  "cargo-husky",
  "eyre",
  "facet",
- "facet-core",
+ "facet-core 0.28.3",
  "facet-pretty",
- "facet-reflect",
+ "facet-reflect 0.28.3",
  "facet-testhelpers",
  "insta",
  "log",
@@ -113,12 +113,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "facet-core"
+version = "0.29.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "52e5c150b48fd89a6a880ca0a5e7cf09d1c7c51ff57af655a740166a8a3fabbb"
+dependencies = [
+ "bitflags",
+ "impls",
+]
+
+[[package]]
 name = "facet-macros"
 version = "0.28.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b50ab132d5eb441268c9a838aafa4fd0f98ed7250af72b83ae5f8bcaffe03252"
 dependencies = [
- "facet-core",
+ "facet-core 0.28.3",
  "facet-macros-emit",
 ]
 
@@ -145,12 +155,12 @@ dependencies = [
 
 [[package]]
 name = "facet-pretty"
-version = "0.28.0"
+version = "0.29.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "67c4075c925ecdba56618db8e2e103ed33388067f18fb40ad27b7105ac559c6e"
+checksum = "644ee0f611efad156a4cd15a456f5185b9eaaffacd2a3a903c16f824122a2ca0"
 dependencies = [
- "facet-core",
- "facet-reflect",
+ "facet-core 0.29.0",
+ "facet-reflect 0.29.0",
 ]
 
 [[package]]
@@ -160,7 +170,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6f5d8e655a1cdb801da9a9117e654751166393563209e9963650aadbb1fbf9e7"
 dependencies = [
  "bitflags",
- "facet-core",
+ "facet-core 0.28.3",
+]
+
+[[package]]
+name = "facet-reflect"
+version = "0.29.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "759240e5415b59d2712aec606b374f5d10ad071b2ff17daeb53ec7e987b60ac3"
+dependencies = [
+ "bitflags",
+ "facet-core 0.29.0",
 ]
 
 [[package]]
