@@ -12,7 +12,7 @@ categories = ["command-line-interface"]
 
 [dependencies]
 facet-reflect = { version = "0.30" }
-facet-core = { version = "0.30" }
+facet-core = { version = "0.31" }
 log = "0.4.28"
 heck = "0.5.0"
 miette = { version = "7.6.0", default-features = false }
