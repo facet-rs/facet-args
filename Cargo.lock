@@ -125,7 +125,7 @@ version = "0.30.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0f2eff8d6840932e1fbd7c4fc80a0521ab303323ea31ec341ea185384c3b1383"
 dependencies = [
- "facet-core",
+ "facet-core 0.30.0",
  "facet-macros",
  "static_assertions",
 ]
@@ -137,9 +137,9 @@ dependencies = [
  "cargo-husky",
  "eyre",
  "facet",
- "facet-core",
+ "facet-core 0.30.0",
  "facet-pretty",
- "facet-reflect",
+ "facet-reflect 0.30.0",
  "facet-testhelpers",
  "heck",
  "insta",
@@ -158,12 +158,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "facet-core"
+version = "0.31.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e09a4180d0a78a9e444cb57ea57b2c1d65ab140e53e35535b76713454a8e158e"
+dependencies = [
+ "bitflags",
+ "impls",
+]
+
+[[package]]
 name = "facet-macros"
 version = "0.30.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2a8c1da45a93b10c5829601e19846c7f13d8cde6e0b65740fee5ea51f96d7d7e"
 dependencies = [
- "facet-core",
+ "facet-core 0.30.0",
  "facet-macros-emit",
 ]
 
@@ -190,12 +200,12 @@ dependencies = [
 
 [[package]]
 name = "facet-pretty"
-version = "0.30.0"
+version = "0.31.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1cfdcb9a0b55c6749bef2c0106ed015ee9269db117e4673ff527ed22ad18f77c"
+checksum = "6c9c5117c29f789a737f6d5d92fb326ddec0a12d1ac2a165dad0ccef38aca609"
 dependencies = [
- "facet-core",
- "facet-reflect",
+ "facet-core 0.31.3",
+ "facet-reflect 0.31.3",
 ]
 
 [[package]]
@@ -205,7 +215,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4b6f7fd53a74e86e32b772f9c9f1b2d50027fc569eff75a2c72751d8e3cef9e3"
 dependencies = [
  "bitflags",
- "facet-core",
+ "facet-core 0.30.0",
+]
+
+[[package]]
+name = "facet-reflect"
+version = "0.31.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "91debebf849ca4acf73f14c74dc5642f8b8e1aa823c86cabfa5d0b4825c66323"
+dependencies = [
+ "bitflags",
+ "facet-core 0.31.3",
 ]
 
 [[package]]
